@@ -4,7 +4,7 @@
 #
 Name     : mvn-maven-plugin-parameter-documenter
 Version  : 2.0.6
-Release  : 3
+Release  : 4
 URL      : https://repo1.maven.org/maven2/org/apache/maven/maven-plugin-parameter-documenter/2.0.6/maven-plugin-parameter-documenter-2.0.6.jar
 Source0  : https://repo1.maven.org/maven2/org/apache/maven/maven-plugin-parameter-documenter/2.0.6/maven-plugin-parameter-documenter-2.0.6.jar
 Source1  : https://repo1.maven.org/maven2/org/apache/maven/maven-plugin-parameter-documenter/2.0.1/maven-plugin-parameter-documenter-2.0.1.jar
@@ -14,17 +14,17 @@ Source4  : https://repo1.maven.org/maven2/org/apache/maven/maven-plugin-paramete
 Source5  : https://repo1.maven.org/maven2/org/apache/maven/maven-plugin-parameter-documenter/2.0.7/maven-plugin-parameter-documenter-2.0.7.pom
 Source6  : https://repo1.maven.org/maven2/org/apache/maven/maven-plugin-parameter-documenter/2.0.9/maven-plugin-parameter-documenter-2.0.9.jar
 Source7  : https://repo1.maven.org/maven2/org/apache/maven/maven-plugin-parameter-documenter/2.0.9/maven-plugin-parameter-documenter-2.0.9.pom
-Source8  : https://repo1.maven.org/maven2/org/apache/maven/maven-plugin-parameter-documenter/2.2.0/maven-plugin-parameter-documenter-2.2.0.jar
-Source9  : https://repo1.maven.org/maven2/org/apache/maven/maven-plugin-parameter-documenter/2.2.0/maven-plugin-parameter-documenter-2.2.0.pom
-Source10  : https://repo1.maven.org/maven2/org/apache/maven/maven-plugin-parameter-documenter/2.2.1/maven-plugin-parameter-documenter-2.2.1.jar
-Source11  : https://repo1.maven.org/maven2/org/apache/maven/maven-plugin-parameter-documenter/2.2.1/maven-plugin-parameter-documenter-2.2.1.pom
+Source8  : https://repo1.maven.org/maven2/org/apache/maven/maven-plugin-parameter-documenter/2.1.0/maven-plugin-parameter-documenter-2.1.0.jar
+Source9  : https://repo1.maven.org/maven2/org/apache/maven/maven-plugin-parameter-documenter/2.1.0/maven-plugin-parameter-documenter-2.1.0.pom
+Source10  : https://repo1.maven.org/maven2/org/apache/maven/maven-plugin-parameter-documenter/2.2.0/maven-plugin-parameter-documenter-2.2.0.jar
+Source11  : https://repo1.maven.org/maven2/org/apache/maven/maven-plugin-parameter-documenter/2.2.0/maven-plugin-parameter-documenter-2.2.0.pom
+Source12  : https://repo1.maven.org/maven2/org/apache/maven/maven-plugin-parameter-documenter/2.2.1/maven-plugin-parameter-documenter-2.2.1.jar
+Source13  : https://repo1.maven.org/maven2/org/apache/maven/maven-plugin-parameter-documenter/2.2.1/maven-plugin-parameter-documenter-2.2.1.pom
 Summary  : No detailed summary available
 Group    : Development/Tools
 License  : Apache-2.0
 Requires: mvn-maven-plugin-parameter-documenter-data = %{version}-%{release}
 Requires: mvn-maven-plugin-parameter-documenter-license = %{version}-%{release}
-BuildRequires : apache-maven
-BuildRequires : buildreq-mvn
 
 %description
 No detailed description available
@@ -77,17 +77,23 @@ cp %{SOURCE6} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/maven-
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/maven-plugin-parameter-documenter/2.0.9
 cp %{SOURCE7} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/maven-plugin-parameter-documenter/2.0.9/maven-plugin-parameter-documenter-2.0.9.pom
 
-mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/maven-plugin-parameter-documenter/2.2.0
-cp %{SOURCE8} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/maven-plugin-parameter-documenter/2.2.0/maven-plugin-parameter-documenter-2.2.0.jar
+mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/maven-plugin-parameter-documenter/2.1.0
+cp %{SOURCE8} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/maven-plugin-parameter-documenter/2.1.0/maven-plugin-parameter-documenter-2.1.0.jar
+
+mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/maven-plugin-parameter-documenter/2.1.0
+cp %{SOURCE9} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/maven-plugin-parameter-documenter/2.1.0/maven-plugin-parameter-documenter-2.1.0.pom
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/maven-plugin-parameter-documenter/2.2.0
-cp %{SOURCE9} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/maven-plugin-parameter-documenter/2.2.0/maven-plugin-parameter-documenter-2.2.0.pom
+cp %{SOURCE10} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/maven-plugin-parameter-documenter/2.2.0/maven-plugin-parameter-documenter-2.2.0.jar
+
+mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/maven-plugin-parameter-documenter/2.2.0
+cp %{SOURCE11} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/maven-plugin-parameter-documenter/2.2.0/maven-plugin-parameter-documenter-2.2.0.pom
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/maven-plugin-parameter-documenter/2.2.1
-cp %{SOURCE10} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/maven-plugin-parameter-documenter/2.2.1/maven-plugin-parameter-documenter-2.2.1.jar
+cp %{SOURCE12} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/maven-plugin-parameter-documenter/2.2.1/maven-plugin-parameter-documenter-2.2.1.jar
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/maven-plugin-parameter-documenter/2.2.1
-cp %{SOURCE11} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/maven-plugin-parameter-documenter/2.2.1/maven-plugin-parameter-documenter-2.2.1.pom
+cp %{SOURCE13} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/maven-plugin-parameter-documenter/2.2.1/maven-plugin-parameter-documenter-2.2.1.pom
 
 
 %files
@@ -103,6 +109,8 @@ cp %{SOURCE11} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/maven
 /usr/share/java/.m2/repository/org/apache/maven/maven-plugin-parameter-documenter/2.0.7/maven-plugin-parameter-documenter-2.0.7.pom
 /usr/share/java/.m2/repository/org/apache/maven/maven-plugin-parameter-documenter/2.0.9/maven-plugin-parameter-documenter-2.0.9.jar
 /usr/share/java/.m2/repository/org/apache/maven/maven-plugin-parameter-documenter/2.0.9/maven-plugin-parameter-documenter-2.0.9.pom
+/usr/share/java/.m2/repository/org/apache/maven/maven-plugin-parameter-documenter/2.1.0/maven-plugin-parameter-documenter-2.1.0.jar
+/usr/share/java/.m2/repository/org/apache/maven/maven-plugin-parameter-documenter/2.1.0/maven-plugin-parameter-documenter-2.1.0.pom
 /usr/share/java/.m2/repository/org/apache/maven/maven-plugin-parameter-documenter/2.2.0/maven-plugin-parameter-documenter-2.2.0.jar
 /usr/share/java/.m2/repository/org/apache/maven/maven-plugin-parameter-documenter/2.2.0/maven-plugin-parameter-documenter-2.2.0.pom
 /usr/share/java/.m2/repository/org/apache/maven/maven-plugin-parameter-documenter/2.2.1/maven-plugin-parameter-documenter-2.2.1.jar
